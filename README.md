@@ -9,7 +9,7 @@ RN应用统一启动动画。有一下有点：
 
 ## 安装
 
-  + npm install @xmly/react-native-startuppage
+  + npm install react-native-startuppage
 
 ## 使用
 为了实现最短的白屏时长， `react-native-startuppage`需要在项目的入口文件中使用。并且减少在这个阶段引入的文件数量
