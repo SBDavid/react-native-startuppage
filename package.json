@@ -1,6 +1,6 @@
 {
   "name": "react-native-startuppage",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "empty",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -36,13 +36,13 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/SBDavid/react-native-page-analytics",
+  "repository": "https://github.com/SBDavid/react-native-startuppage",
   "author": "jiawei.tang <billl89@126.com> (https://github.com/SBDavid)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SBDavid/react-native-page-analytics/issues"
+    "url": "https://github.com/SBDavid/react-native-startuppage/issues"
   },
-  "homepage": "https://github.com/SBDavid/react-native-page-analytics#readme",
+  "homepage": "https://github.com/SBDavid/react-native-startuppage#readme",
   "devDependencies": {
     "@commitlint/config-conventional": "^11.0.0",
     "@react-native-community/eslint-config": "^2.0.0",
