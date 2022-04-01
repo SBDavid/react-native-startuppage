@@ -3827,6 +3827,11 @@ react-native-scrollable-tab-view@1.0.0:
     prop-types "^15.6.0"
     react-timer-mixin "^0.13.3"
 
+react-native-startuppage@^0.1.6:
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/react-native-startuppage/-/react-native-startuppage-0.1.6.tgz#da983f58fcd195168323452d5c0aaa370fe17e47"
+  integrity sha512-8Wqto56SndW16DjVl+6POkmfBiYkOB3RWsspf7u2rkA8CleNfQAwl4Rm8GMEPK+MK7JONAvuUKm8v6/GHlyaDw==
+
 react-native@0.63.2:
   version "0.63.2"
   resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.63.2.tgz#eaebf3430577b37fbd66ef228a86b3408259ef8e"

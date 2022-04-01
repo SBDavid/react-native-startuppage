@@ -50,7 +50,7 @@ AppRegistry.registerComponent('PageAnalyticsExample', () => AppWithLoading);
 index.jsx
 ```js
 import { AppRegistry } from 'react-native';
-import { StartupPage, DefaultLoadingComp } from '../src/index';
+import { StartupPage, DefaultLoadingComp } from 'react-native-startuppage';
 import React from 'react';
 
 class AppWithLoading extends StartupPage {
