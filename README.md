@@ -45,7 +45,10 @@ AppRegistry.registerComponent('PageAnalyticsExample', () => AppWithLoading);
 - indicatorColor：动画颜色，默认黑色
 - indicatorSize：动画宽高，默认40px
 - indicatorDuration：fadein动画时长，默认800ms
+- showIndicator：是否展示加载动画
 - bgColor?：背景色，默认白色
+- bgImageStyle：背景图
+- bgImageSource：背景图
 
 index.jsx
 ```js
@@ -60,7 +63,7 @@ class AppWithLoading extends StartupPage {
     return <App {...initData} />;
   }
 
-  getFallbackComp(props: any): Element {
+  getLoadingComp(props: any): Element {
     const isDarkMode = props.initData.isDarkMode;
 
     if (isDarkMode) {

@@ -15,7 +15,7 @@ type S = {
 export class StartupPage extends React.PureComponent<P, S> {
   constructor(props: P) {
     super(props);
-    this.FallbackComp = this.getFallbackComp(props);
+    this.FallbackComp = this.getLoadingComp(props);
     this.state = {
       isLoading: true,
     };
@@ -31,10 +31,10 @@ export class StartupPage extends React.PureComponent<P, S> {
     });
   }
 
-  protected getFallbackComp(_props: P): Element {
+  protected getLoadingComp(_props: P): Element {
     return (
       <DefaultLoadingComp
-        indicatorColor="black"
+        indicatorColor="#ec6f43"
         indicatorSize={40}
         indicatorDuration={800}
         bgColor="white"
