@@ -1,6 +1,6 @@
 {
   "name": "react-native-startuppage",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "empty",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
