@@ -53,16 +53,31 @@ AppRegistry.registerComponent('PageAnalyticsExample', () => AppWithLoading);
 index.jsx
 ```js
 import { AppRegistry } from 'react-native';
-import { StartupPage, DefaultLoadingComp } from 'react-native-startuppage';
+import { StartupPage, DefaultLoadingComp, DefaultBgComp } from 'react-native-startuppage';
 import React from 'react';
 
 class AppWithLoading extends StartupPage {
+
+  // 主界面
   getLazyComponent(props: any) {
     const initData = props.initData;
     const App = require('./src/App').default;
     return <App {...initData} />;
   }
 
+  // 背景图
+  getBgComp(_props: any): Element {
+    const home_pic = require('./home_pic.png');
+    return (
+      <DefaultBgComp
+        bgColor="grey"
+        bgImageSource={home_pic}
+        bgImageStyle={styles.homeImage}
+      />
+    );
+  }
+
+  // loading动画
   getLoadingComp(props: any): Element {
     const isDarkMode = props.initData.isDarkMode;
 
@@ -70,7 +85,6 @@ class AppWithLoading extends StartupPage {
       <DefaultLoadingComp
         indicatorColor="white"
         indicatorSize={40}
-        bgColor="black"
       />
     }
 
@@ -78,7 +92,6 @@ class AppWithLoading extends StartupPage {
       <DefaultLoadingComp
         indicatorColor="black"
         indicatorSize={40}
-        bgColor="white"
       />
     );
   }
