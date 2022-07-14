@@ -9,16 +9,18 @@ type P = {
 };
 
 type S = {
-  isLoading: boolean;
+  isAppLoading: boolean;
+  showLoading: boolean;
 };
 
 export class StartupPage extends React.PureComponent<P, S> {
   constructor(props: P) {
     super(props);
-    this.FallbackComp = this.getLoadingComp(props);
+    this.FallbackComp = this._getLoadingComp(props);
     this.BgComp = this.getBgComp(props);
     this.state = {
-      isLoading: true,
+      isAppLoading: true,
+      showLoading: true,
     };
   }
 
@@ -29,8 +31,27 @@ export class StartupPage extends React.PureComponent<P, S> {
   componentDidMount() {
     requestAnimationFrame(() => {
       this.LazyComponent = this.getLazyComponent(this.props);
-      this.setState({ isLoading: false });
+      this.setState({ isAppLoading: false });
+      setTimeout(() => {
+        this.setState({ showLoading: false });
+      }, 300);
     });
+  }
+
+  protected _getLoadingComp(_props: P): Element {
+    return (
+      <View
+        style={{
+          position: 'absolute',
+          width: '100%',
+          height: '100%',
+          top: 0,
+          left: 0,
+        }}
+      >
+        {this.getLoadingComp(_props)}
+      </View>
+    );
   }
 
   protected getLoadingComp(_props: P): Element {
@@ -38,7 +59,7 @@ export class StartupPage extends React.PureComponent<P, S> {
       <DefaultLoadingComp
         indicatorColor="#ec6f43"
         indicatorSize={40}
-        indicatorDuration={800}
+        indicatorDuration={500}
       />
     );
   }
@@ -53,22 +74,31 @@ export class StartupPage extends React.PureComponent<P, S> {
 
   render(): React.ReactNode {
     if (this.BgComp === undefined) {
-      return this.renderApp();
+      // return this.renderApp();
     }
 
     return (
       <View style={{ width: '100%', height: '100%' }}>
         {this.BgComp}
-        <View style={{ position: 'absolute', width: '100%', height: '100%' }}>
+        <View
+          style={{
+            position: 'absolute',
+            width: '100%',
+            height: '100%',
+            top: 0,
+            left: 0,
+          }}
+        >
           {this.renderApp()}
         </View>
+        {this.state.showLoading ? this.FallbackComp : null}
       </View>
     );
   }
 
   renderApp(): React.ReactNode {
-    if (this.state.isLoading) {
-      return this.FallbackComp;
+    if (this.state.isAppLoading) {
+      return null;
     }
     return this.LazyComponent;
   }

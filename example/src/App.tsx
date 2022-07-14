@@ -18,7 +18,7 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-for (let i = 0; i < 999999; i++) {
+for (let i = 0; i < 99999; i++) {
   for (let j = 0; j < 99; j++) {
     Math.sqrt(i);
   }

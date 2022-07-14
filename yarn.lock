@@ -1784,32 +1784,6 @@
   resolved "https://registry.nlark.com/@react-native-community/eslint-plugin/download/@react-native-community/eslint-plugin-1.1.0.tgz#e42b1bef12d2415411519fd528e64b593b1363dc"
   integrity sha1-5Csb7xLSQVQRUZ/VKOZLWTsTY9w=
 
-"@react-navigation/core@^5.12.3":
-  version "5.16.1"
-  resolved "https://registry.nlark.com/@react-navigation/core/download/@react-navigation/core-5.16.1.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40react-navigation%2Fcore%2Fdownload%2F%40react-navigation%2Fcore-5.16.1.tgz#e0d308bd9bbd930114ce55c4151806b6d7907f69"
-  integrity sha1-4NMIvZu9kwEUzlXEFRgGtteQf2k=
-  dependencies:
-    "@react-navigation/routers" "^5.7.4"
-    escape-string-regexp "^4.0.0"
-    nanoid "^3.1.15"
-    query-string "^6.13.6"
-    react-is "^16.13.0"
-
-"@react-navigation/native@5.7.3":
-  version "5.7.3"
-  resolved "https://registry.nlark.com/@react-navigation/native/download/@react-navigation/native-5.7.3.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40react-navigation%2Fnative%2Fdownload%2F%40react-navigation%2Fnative-5.7.3.tgz#3cda5ee7b0fe0d980db6d788419f0af50a64deac"
-  integrity sha1-PNpe57D+DZgNtteIQZ8K9Qpk3qw=
-  dependencies:
-    "@react-navigation/core" "^5.12.3"
-    nanoid "^3.1.12"
-
-"@react-navigation/routers@^5.7.4":
-  version "5.7.4"
-  resolved "https://registry.nlark.com/@react-navigation/routers/download/@react-navigation/routers-5.7.4.tgz?cache=0&sync_timestamp=1627983820779&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40react-navigation%2Frouters%2Fdownload%2F%40react-navigation%2Frouters-5.7.4.tgz#8b5460e841a0c64f6c9a5fbc2a1eb832432d4fb0"
-  integrity sha1-i1Rg6EGgxk9sml+8Kh64MkMtT7A=
-  dependencies:
-    nanoid "^3.1.15"
-
 "@release-it/conventional-changelog@^2.0.0":
   version "2.0.1"
   resolved "https://registry.nlark.com/@release-it/conventional-changelog/download/@release-it/conventional-changelog-2.0.1.tgz#bdd52ad3ecc0d6e39d637592d6ea2bd6d28e5ecb"
@@ -4106,11 +4080,6 @@ eventemitter3@^3.0.0:
   version "3.1.2"
   resolved "https://registry.nlark.com/eventemitter3/download/eventemitter3-3.1.2.tgz#2d3d48f9c346698fce83a85d7d664e98535df6e7"
   integrity sha1-LT1I+cNGaY/Og6hdfWZOmFNd9uc=
-
-eventemitter3@^4.0.7:
-  version "4.0.7"
-  resolved "https://registry.npm.taobao.org/eventemitter3/download/eventemitter3-4.0.7.tgz?cache=0&sync_timestamp=1598517809015&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Feventemitter3%2Fdownload%2Feventemitter3-4.0.7.tgz#2de9b68f6528d5644ef5c59526a1b4a07306169f"
-  integrity sha1-Lem2j2Uo1WRO9cWVJqG0oHMGFp8=
 
 exec-sh@^0.3.2:
   version "0.3.6"
@@ -6846,11 +6815,6 @@ nan@^2.12.1:
   resolved "https://registry.nlark.com/nan/download/nan-2.15.0.tgz#3f34a473ff18e15c1b5626b62903b5ad6e665fee"
   integrity sha1-PzSkc/8Y4VwbVia2KQO1rW5mX+4=
 
-nanoid@^3.1.12, nanoid@^3.1.15:
-  version "3.1.25"
-  resolved "https://registry.nlark.com/nanoid/download/nanoid-3.1.25.tgz?cache=0&sync_timestamp=1628771923493&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fnanoid%2Fdownload%2Fnanoid-3.1.25.tgz#09ca32747c0e543f0e1814b7d3793477f9c8e152"
-  integrity sha1-CcoydHwOVD8OGBS303k0d/nI4VI=
-
 nanomatch@^1.2.9:
   version "1.2.13"
   resolved "https://registry.nlark.com/nanomatch/download/nanomatch-1.2.13.tgz#b87a8aa4fc0de8fe6be88895b38983ff265bd119"
@@ -7636,7 +7600,7 @@ qs@^6.9.4:
   dependencies:
     side-channel "^1.0.4"
 
-query-string@^6.13.6, query-string@^6.13.8:
+query-string@^6.13.8:
   version "6.14.1"
   resolved "https://registry.nlark.com/query-string/download/query-string-6.14.1.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fquery-string%2Fdownload%2Fquery-string-6.14.1.tgz#7ac2dca46da7f309449ba0f86b1fd28255b0c86a"
   integrity sha1-esLcpG2n8wlEm6D4ax/SglWwyGo=
@@ -7684,7 +7648,7 @@ react-devtools-core@^4.6.0:
     shell-quote "^1.6.1"
     ws "^7"
 
-react-is@^16.12.0, react-is@^16.13.0, react-is@^16.8.1, react-is@^16.8.4:
+react-is@^16.12.0, react-is@^16.8.1, react-is@^16.8.4:
   version "16.13.1"
   resolved "https://registry.nlark.com/react-is/download/react-is-16.13.1.tgz?cache=0&sync_timestamp=1629908291142&other_urls=https%3A%2F%2Fregistry.nlark.com%2Freact-is%2Fdownload%2Freact-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha1-eJcppNw23imZ3BVt1sHZwYzqVqQ=

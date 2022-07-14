@@ -20,16 +20,16 @@ class AppWithLoading extends StartupPage {
     );
   }
 
-  getBgComp(_props: any): Element {
-    const home_pic = require('./home_pic.png');
-    return (
-      <DefaultBgComp
-        bgColor="grey"
-        bgImageSource={home_pic}
-        bgImageStyle={styles.homeImage}
-      />
-    );
-  }
+  // getBgComp(_props: any): Element {
+  //   const home_pic = require('./home_pic.png');
+  //   return (
+  //     <DefaultBgComp
+  //       bgColor="grey"
+  //       bgImageSource={home_pic}
+  //       bgImageStyle={styles.homeImage}
+  //     />
+  //   );
+  // }
 }
 
 const styles = StyleSheet.create({
