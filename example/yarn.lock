@@ -811,6 +811,11 @@
     "@types/yargs" "^15.0.0"
     chalk "^3.0.0"
 
+"@react-native-community/cameraroll@4.0.0":
+  version "4.0.0"
+  resolved "https://registry.npmmirror.com/@react-native-community/cameraroll/-/cameraroll-4.0.0.tgz#97a4be5d01bc05c387c26599ffa559e1b425e415"
+  integrity sha512-ZqzWbNHklgq/sPUmlDgi/SvfbkIVKNYXhcDGRcabXRsX9aIyNEX2dk2fkCSJoKWqBF8uSUnVznonpTP3TlwdyQ==
+
 "@react-native-community/cli-debugger-ui@^4.13.1":
   version "4.13.1"
   resolved "https://registry.yarnpkg.com/@react-native-community/cli-debugger-ui/-/cli-debugger-ui-4.13.1.tgz#07de6d4dab80ec49231de1f1fbf658b4ad39b32c"
@@ -935,6 +940,18 @@
   version "0.1.10"
   resolved "https://registry.nlark.com/@react-native-community/masked-view/download/@react-native-community/masked-view-0.1.10.tgz?cache=0&sync_timestamp=1619440061429&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40react-native-community%2Fmasked-view%2Fdownload%2F%40react-native-community%2Fmasked-view-0.1.10.tgz#5dda643e19e587793bc2034dd9bf7398ad43d401"
   integrity sha1-XdpkPhnlh3k7wgNN2b9zmK1D1AE=
+
+"@react-native-community/netinfo@5.9.6":
+  version "5.9.6"
+  resolved "https://registry.npmmirror.com/@react-native-community/netinfo/-/netinfo-5.9.6.tgz#fab6cd78fe740f9c674b4a93abd77f6bfb90f655"
+  integrity sha512-cEkA1Apg8+VjnDdeDZRHI+2RqouiPKgYnewouRkvF4ettH9ZS4Cmi/nANQKIpIu2L+czboxM3fCZ44nc7IM9VQ==
+
+"@react-native-community/push-notification-ios@1.5.0":
+  version "1.5.0"
+  resolved "https://registry.npmmirror.com/@react-native-community/push-notification-ios/-/push-notification-ios-1.5.0.tgz#b41802b58d2388c8cb76cd219bbeec9ac9a4c06d"
+  integrity sha512-88Uwu6S8oRVnuMfBMGN+MtTyUjiVmMKwfObYrPmm+b2E2Aqk0WlZ4clfECukG8QIzv1pfELJZ5uZMVTYMI6klg==
+  dependencies:
+    invariant "^2.2.4"
 
 "@react-native-community/viewpager@^2.0.1":
   version "2.0.2"
@@ -1095,6 +1112,17 @@
   dependencies:
     lodash "^4.17.4"
     prop-types "^15.5.10"
+
+"@xmly/rn-sdk@^0.0.29":
+  version "0.0.29"
+  resolved "http://xnpm.ximalaya.com/@xmly/rn-sdk/download/@xmly/rn-sdk-0.0.29.tgz#e6fe3b0d78b9886baefa76ea5ca865b45135d3ec"
+  integrity sha1-5v47DXi5iGuu+nbqXKhltFE10+w=
+  dependencies:
+    "@react-native-community/cameraroll" "4.0.0"
+    "@react-native-community/netinfo" "5.9.6"
+    "@react-native-community/push-notification-ios" "1.5.0"
+    react-native-permissions "2.1.5"
+    react-native-view-shot "3.1.2"
 
 abort-controller@^3.0.0:
   version "3.0.0"
@@ -3800,6 +3828,11 @@ react-native-iphone-x-helper@^1.2.1, react-native-iphone-x-helper@^1.3.0:
   resolved "https://registry.npm.taobao.org/react-native-iphone-x-helper/download/react-native-iphone-x-helper-1.3.1.tgz#20c603e9a0e765fd6f97396638bdeb0e5a60b010"
   integrity sha1-IMYD6aDnZf1vlzlmOL3rDlpgsBA=
 
+react-native-permissions@2.1.5:
+  version "2.1.5"
+  resolved "https://registry.npmmirror.com/react-native-permissions/-/react-native-permissions-2.1.5.tgz#6cfc4f1ab1590f4952299b7cdc9698525ad540e0"
+  integrity sha512-b9KO/4UEV9qddl+kcSybmdk8nlAifclSDBR2rSvc5KZM06vIaJWJNIzK2ZwPXqDQ5yD3CJLuKTRj7Fz+jM9qyQ==
+
 react-native-reanimated@1.12.0:
   version "1.12.0"
   resolved "https://registry.nlark.com/react-native-reanimated/download/react-native-reanimated-1.12.0.tgz#6a7d6746957e0fd56694ea7ef7ffb82b1b3666a3"
@@ -3827,10 +3860,15 @@ react-native-scrollable-tab-view@1.0.0:
     prop-types "^15.6.0"
     react-timer-mixin "^0.13.3"
 
-react-native-startuppage@^0.1.6:
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/react-native-startuppage/-/react-native-startuppage-0.1.6.tgz#da983f58fcd195168323452d5c0aaa370fe17e47"
-  integrity sha512-8Wqto56SndW16DjVl+6POkmfBiYkOB3RWsspf7u2rkA8CleNfQAwl4Rm8GMEPK+MK7JONAvuUKm8v6/GHlyaDw==
+"react-native-startuppage@file:..":
+  version "0.1.12"
+  dependencies:
+    "@xmly/rn-sdk" "^0.0.29"
+
+react-native-view-shot@3.1.2:
+  version "3.1.2"
+  resolved "https://registry.npmmirror.com/react-native-view-shot/-/react-native-view-shot-3.1.2.tgz#8c8e84c67a4bc8b603e697dbbd59dbc9b4f84825"
+  integrity sha512-9u9fPtp6a52UMoZ/UCPrCjKZk8tnkI9To0Eh6yYnLKFEGkRZ7Chm6DqwDJbYJHeZrheCCopaD5oEOnRqhF4L2Q==
 
 react-native@0.63.2:
   version "0.63.2"

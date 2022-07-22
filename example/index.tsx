@@ -1,5 +1,5 @@
 import { AppRegistry, Dimensions, StyleSheet } from 'react-native';
-import { StartupPage, DefaultLoadingComp, DefaultBgComp } from '../src/index';
+import { StartupPage } from '../src/StartupPageNative';
 import React from 'react';
 
 const { width } = Dimensions.get('screen');
@@ -10,15 +10,15 @@ class AppWithLoading extends StartupPage {
     return <LazyApp {...props} />;
   }
 
-  getLoadingComp(_props: any): Element {
-    return (
-      <DefaultLoadingComp
-        indicatorColor="black"
-        indicatorSize={40}
-        showIndicator={true}
-      />
-    );
-  }
+  // getLoadingComp(_props: any): Element {
+  //   return (
+  //     <DefaultLoadingComp
+  //       indicatorColor="black"
+  //       indicatorSize={40}
+  //       showIndicator={true}
+  //     />
+  //   );
+  // }
 
   // getBgComp(_props: any): Element {
   //   const home_pic = require('./home_pic.png');
@@ -41,4 +41,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('PageAnalyticsExample', () => AppWithLoading);
+AppRegistry.registerComponent('pp', () => AppWithLoading);

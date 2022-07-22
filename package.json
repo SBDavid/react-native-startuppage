@@ -1,6 +1,6 @@
 {
   "name": "react-native-startuppage",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "description": "empty",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -145,5 +145,8 @@
         }
       ]
     ]
+  },
+  "dependencies": {
+    "@xmly/rn-sdk": "^0.0.29"
   }
 }
